@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap");
+/*
+    font-family: 'Open Sans', sans-serif;
+    
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* GLOBALES */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+/* UTILIDADES */
+.txt-center {
+  text-align: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+/* BOTONES */
+.btn {
+  display: block;
+  margin: 2rem 0rem;
+  padding: 1rem 3rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #000000;
+}
+
+.btn-secondary {
+  background-color: #784d3c;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block;
+  }
+}
+/* HEADER */
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site-header {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60rem;
+}
+
+.site-header a,
+.site-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-header h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.site-header h1 span {
+  font-weight: 700;
+}
+
+.header-txt {
+  margin-top: 5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .header-txt {
+    margin-top: 15rem;
+  }
+}
+
+.header-txt p {
+  font-size: 2.2rem;
+}
+
+/* NAVEGACIÓN */
+.nav a {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .nav a {
+    display: inline;
+    margin-right: 2rem;
+  }
+
+  .nav a:last-of-type {
+    margin: 0;
+  }
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.blog,
+.courses {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    justify-content: space-between;
+  }
+
+  .blog {
+    flex-basis: 66.66%;
+  }
+
+  .courses {
+    flex-basis: calc(33.33% - 4rem);
+  }
+}
+
+/* BLOG */
+.blog-post {
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.blog-post:last-of-type {
+  border: none;
+}
+
+/* CURSOS */
+.courses-list {
+  padding: 0rem;
+  list-style: none;
+}
+
+.courses-list p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.courses-list p span {
+  font-weight: 400;
+}
+
+.course {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.course:last-of-type {
+  border: none;
+}
+
+/* FOOTER */
+.site-footer {
+  margin-top: 4rem;
+  padding: 3rem 0rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.site-footer p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.site-footer p span {
+  font-weight: 700;
+}
