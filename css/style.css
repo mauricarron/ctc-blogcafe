@@ -66,6 +66,33 @@ img {
   margin: 0;
 }
 
+/* GRID */
+@media (min-width: 768px) {
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0rem;
+  }
+  .col-center {
+    justify-content: center;
+  }
+  .col-4 {
+    flex: 0 0 calc(33.33% - 1rem);
+  }
+  .col-6 {
+    flex: 0 0 calc(50% - 1rem);
+  }
+  .col-8 {
+    flex: 0 0 calc(66.66% - 1rem);
+  }
+  .col-10 {
+    flex: 0 0 calc(83.33% - 1rem);
+  }
+  .col-12 {
+    flex: 0 0 100%;
+  }
+}
+
 /* BOTONES */
 .btn {
   display: block;
@@ -78,6 +105,10 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -202,13 +233,18 @@ img {
   list-style: none;
 }
 
-.courses-list p {
+.course p {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 2rem;
 }
 
-.courses-list p span {
+.course p.description {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.course p span {
   font-weight: 400;
 }
 
@@ -236,4 +272,72 @@ img {
 
 .site-footer p span {
   font-weight: 700;
+}
+
+/* CONTACTO */
+.site-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-contact {
+  width: 85%;
+  padding: 4rem;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .form-contact {
+    margin-top: -10rem;
+  }
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2rem 0rem;
+}
+
+@media (min-width: 768px) {
+  .form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+  }
+}
+
+.form-input input:not([type="submit"]) {
+  flex-grow: 1;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+}
+
+.form-input textarea {
+  flex-grow: 1;
+  height: 20rem;
+  border: 1px solid #e1e1e1;
+}
+
+.form-input label {
+  margin-right: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .form-input label {
+    flex-basis: 8rem;
+    text-align: right;
+  }
+}
+
+.form-contact .enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-contact .enviar input {
+  border: none;
 }
